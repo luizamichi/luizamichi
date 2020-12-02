@@ -4,8 +4,8 @@
 
 - :mag_right: Interested in web and mobile development.
 - :mortar_board: Graduating in Computer Science from the State University of Maringá – UEM.
-- :briefcase: IT Intern at Sinteemar.
-- :computer: Constantly learning about web development with HTML, CSS, Bootstrap, jQuery, PHP and SQL.
+- :briefcase: Development intern at AirTalent.
+- :computer: With 3 years of professional experience in computer technician and more than 3 years of experience with HTML, CSS, Bootstrap, jQuery, PHP, SQL, Python and Flask.
 
 ### :mailbox: How to reach me:
 
