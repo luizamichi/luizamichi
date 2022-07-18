@@ -14,8 +14,8 @@ $sessionForm = isset($_SESSION['MESSAGE_SENT']) && $_SESSION['MESSAGE_SENT'] ===
 if ($requestMethod === 'POST' && $sessionForm === false) {
 	// LIMPA OS TEXTOS ENVIADOS
 	$emailForm = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
-	$nameForm = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_STRING);
-	$messageForm = filter_input(INPUT_POST, 'message', FILTER_SANITIZE_STRING);
+	$nameForm = filter_input(INPUT_POST, 'name', FILTER_DEFAULT);
+	$messageForm = filter_input(INPUT_POST, 'message', FILTER_DEFAULT);
 
 	// REMOVE ESPAÇOS DESNECESSÁRIOS E CARACTERES PERIGOSOS (FECHAMENTO DE COMENTÁRIO EXTENSO)
 	$emailForm = trim(str_replace('*/', '', $emailForm));
@@ -60,7 +60,7 @@ $scriptRoute = $homeRoute . 'script/';
 $stylesheetRoute = $homeRoute . 'stylesheet/';
 
 // ARQUIVOS DO DIRETÓRIO DE DOWNLOAD
-$downloadFiles = scandir($downloadDirectory);
+$downloadFiles = (array) scandir($downloadDirectory);
 $downloadFiles = array_slice($downloadFiles, 2);
 
 // ORDENA OS ARQUIVOS POR DATA
@@ -88,24 +88,24 @@ $downloadFiles = array_filter($downloadFiles, function (string $file): bool {
 	<meta content="nofollow" name="robots"/>
 	<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
 	<meta content="Luiz Joaquim Aderaldo Amichi" name="author"/>
-	<meta name="description" content="Solus Computação."/>
-	<meta name="keywords" content="Operadora de saúde, plano de saúde, Solus, web."/>
+	<meta content="O Solus Saúde é hoje o sistema de Gestão de Operadoras de Planos de Saúde mais moderno e seguro do mercado brasileiro." name="description"/>
+	<meta content="Operadora de saúde, plano de saúde, Solus, web." name="keywords"/>
 	<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 
-	<meta property="og:description" content="Solus Computação."/>
-	<meta property="og:image" content="https://luizamichi.com.br/cover.jpg"/>
-	<meta property="og:image:secure_url" content="https://luizamichi.com.br/cover.jpg"/>
-	<meta property="og:locale" content="pt_BR"/>
-	<meta property="og:site_name" content="Solus"/>
-	<meta property="og:type" content="website"/>
-	<meta property="og:title" content="Solus - Luiz Amichi"/>
-	<meta property="og:url" content="https://luizamichi.com.br"/>
+	<meta content="O Solus Saúde é hoje o sistema de Gestão de Operadoras de Planos de Saúde mais moderno e seguro do mercado brasileiro." property="og:description"/>
+	<meta content="https://luizamichi.com.br/images/card.png" property="og:image"/>
+	<meta content="https://luizamichi.com.br/images/card.png" property="og:image:secure_url"/>
+	<meta content="pt_BR" property="og:locale"/>
+	<meta content="Solus" property="og:site_name"/>
+	<meta content="website" property="og:type"/>
+	<meta content="Solus - Luiz Amichi" property="og:title"/>
+	<meta content="http://download.solus.inf.br:8080/pk/luiz/" property="og:url"/>
 
-	<meta name="twitter:card" content="summary_large_image"/>
-	<meta name="twitter:description" content="Solus Computação."/>
-	<meta name="twitter:domain" content="luizamichi.com.br"/>
-	<meta name="twitter:image" content="https://luizamichi.com.br/cover.jpg"/>
-	<meta name="twitter:title" content="Solus - Luiz Amichi"/>
+	<meta content="summary_large_image" name="twitter:card"/>
+	<meta content="O Solus Saúde é hoje o sistema de Gestão de Operadoras de Planos de Saúde mais moderno e seguro do mercado brasileiro." name="twitter:description"/>
+	<meta content="luizamichi.com.br" name="twitter:domain"/>
+	<meta content="https://luizamichi.com.br/images/card.png" name="twitter:image"/>
+	<meta content="Solus - Luiz Amichi" name="twitter:title"/>
 
 	<title>Solus - Luiz Amichi</title>
 
