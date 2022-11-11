@@ -108,7 +108,6 @@ p {
 
 abbr[title],
 abbr[data-original-title] {
-	text-decoration: underline;
 	-webkit-text-decoration: underline dotted;
 	text-decoration: underline dotted;
 	cursor: help;
@@ -208,7 +207,7 @@ pre,
 code,
 kbd,
 samp {
-	font-family: monospace, monospace;
+	font-family: monospace;
 	font-size: 1em;
 }
 
@@ -287,6 +286,7 @@ button,
 html [type="button"],
 [type="reset"],
 [type="submit"] {
+	appearance: button;
 	-webkit-appearance: button;
 }
 
@@ -310,6 +310,7 @@ input[type="time"],
 input[type="datetime-local"],
 input[type="month"] {
 	-webkit-appearance: listbox;
+	appearance: listbox;
 }
 
 textarea {
@@ -348,6 +349,7 @@ progress {
 [type="search"] {
 	outline-offset: -2px;
 	-webkit-appearance: none;
+	appearance: none;
 }
 
 [type="search"]::-webkit-search-cancel-button,
@@ -10314,7 +10316,7 @@ a.text-dark:focus {
 }
 
 .text-hide {
-	font: 0/0 a;
+	font: none;
 	color: transparent;
 	text-shadow: none;
 	background-color: transparent;
@@ -10825,7 +10827,7 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
 	width: 40px;
 	height: 2px;
 	color: #121212;
-	font: bold 14px/.4 Helvetica;
+	font: bold 14px/.4 Helvetica, sans-serif;
 	text-transform: uppercase;
 	text-indent: -55px;
 	background: #fff;
@@ -12025,7 +12027,7 @@ textarea.form-control {
 }
 
 .block-8 .accordion-item .heading>a[aria-expanded="true"]:before {
-	font-family: 'icomoon';
+	font-family: 'icomoon', sans-serif;
 	position: absolute;
 	content: "\e316";
 	-webkit-transition: .3s all ease;
@@ -12039,7 +12041,7 @@ textarea.form-control {
 .block-8 .accordion-item .heading>a[aria-expanded="false"]:before {
 	content: "\e313";
 	color: #ccc;
-	font-family: 'icomoon';
+	font-family: 'icomoon', sans-serif;
 	position: absolute;
 	-webkit-transition: .3s all ease;
 	-o-transition: .3s all ease;
