@@ -4,7 +4,7 @@
 
 - :mag_right: Interested in web development and API.
 - :mortar_board: Graduated in Computer Science from the State University of Maringá – UEM. Postgraduate in Database Administration at Universidade Norte do Paraná – UNOPAR.
-- :briefcase: Systems Analyst at [Solus Computação](https://solus.inf.br).
+- :briefcase: Senior Backend Developer at [Cooper Bank](https://www.cooperbank.com.br).
 - :computer: Developing algorithms since 2017.
 - :coffee: HTML, CSS, PHP, SQL, Oracle PL/SQL, Python, JS, Delphi.
 
