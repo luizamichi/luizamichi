@@ -4,7 +4,7 @@
 
 - :mag_right: Interested in web development, API and AI.
 - :mortar_board: Graduated in Computer Science from the State University of Maringá - UEM. Postgraduate in Database Administration at UNOPAR.
-- :briefcase: Middle Fullstack Developer at [Solus Computação](https://solus.inf.br).
+- :briefcase: Middle Fullstack Developer at [CooperTec](https://www.coopertec.com.br).
 - :computer: Developing algorithms since 2014.
 - :coffee: HTML, CSS, PHP, SQL, Python, JS, Delphi.
 

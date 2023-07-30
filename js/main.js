@@ -111,7 +111,7 @@ $(document).ready(function($) {
 
 			}
 
-		} , { offset: '95%' } );
+		}, { offset: '95%' } );
 
 	}
 	counter();
@@ -148,7 +148,7 @@ $(document).ready(function($) {
 
 			}
 
-		} , { offset: '95%' } );
+		}, { offset: '95%' } );
 	};
 	contentWayPoint();
 
